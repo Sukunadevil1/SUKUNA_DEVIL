@@ -479,8 +479,8 @@ class Sukuna_create_menu():
 					print(f' {x} sucessfully -> {uid} [{idss}]\033[0m')
 			except KeyError:
 				pass
-				except requests.exceptions.ConnectionError:
-			input(" connection error - press enter to continue")
+			except requests.exceptions.ConnectionError:
+				input(" connection error - press enter to continue")
 		try:
 			Sukuna = open('.a.txt', 'r').read().splitlines()
 		except:
@@ -920,4 +920,3 @@ def divider():
 
 os.system('git pull')
 main_menu()
-					
