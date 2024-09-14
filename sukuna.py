@@ -2,16 +2,14 @@
 #-*- encoding: Utf-8 -*-
 #coding=utf-8
 """--------------------------------------------
-
+#   Script is by Sukuna
 #--------------------------------------------"""
 
 #/-----modules------/
 import os,re,random,uuid,subprocess
 from os import system
-import os,base64
-os.system("xdg-open https://www.facebook.com/profile.php?id=61554801701763")
 import time, json, string
-os.system('touch /sdcard/SUKUNA_DADY')
+os.system('touch /sdcard/007.txt')
 colors = ["\033[0;30m", "\033[1;30m", "\033[0;31m", "\033[1;31m", "\033[0;32m", "\033[1;32m","\033[0;92m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[0;33m", "\033[1;33m", "\033[0;34m", "\033[1;34m", "\033[0;35m", "\033[1;35m", "\033[0;36m", "\033[1;36m", "\033[0;37m", "\033[1;37m", "\033[1;90m", "\033[0;91m","\033[1;91m", "\033[0;92m", "\033[1;93m", "\033[0;94m", "\033[1;94m", "\033[0;95m","\033[1;95m", "\033[0;96m", "\033[1;96m", "\033[0;97m", "\033[0;100m", "\033[1;100m","\033[0;101m", "\033[1;101m", "\033[0;102m", "\033[1;102m","\033[0;104m", "\033[1;104m", "\033[0;105m", "\033[1;105m", "\033[0;106m", "\033[1;106m"]
 
 #------(modules_install)------
@@ -25,7 +23,7 @@ except:
 try:
 	import requests
 except:
-	os.system('clear')
+	os.system('pip install requests')
 
 #------------(end)---------
 
@@ -34,7 +32,7 @@ try:
 except:
 	os.system('pip install bs4')
 try:
-	open('/sdcard/SUKUNA_DADY.txt','w').write(' ')
+	open('/sdcard/....qsr.txt','w').write(' ')
 except Exception as e:
 	print(e)
 	print('Allow Termux Permissions ! And Run Again ')
@@ -45,21 +43,16 @@ qq="8280"
 qqq="52729"
 qqqq="420"
 client_id = f"{qqqq}038{q}89{qq}485649{qqq}208"
-#/-----logo-----/
-logo = '''{}
-
-\033[33m【•】⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃➤
-\033[32m   _____ __  ____ ____  ___   _____ 
-\033[32m  / ___// / / / //_/ / / / | / /   |
-\033[32m  \__ \/ / / / ,< / / / /  |/ / /| |
-\033[32m ___/ / /_/ / /| / /_/ / /|  / ___ |
-\033[32m/____/\____/_/ |_\____/_/ |_/_/  |_|
-                                    
-\033[33m【•】⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃➤
+#/-----logo-----/  
+logo = '''{} 
+                                      
+ ____  _   _ _  ___   _ _   _    _    
+/ ___|| | | | |/ | | | | \ | |  / \   
+\___ \| | | | ' /| | | |  \| | / _ \  
+ ___) | |_| | . \| |_| | |\  |/ ___ \ 
+|____/ \___/|_|\_\\___/|_| \_/_/   \_\ 
 {}
-    ㅤㅤㅤㅤㅤ  SUKUNA_DADY
 {}'''.format('\n',50*'-',50*'-')
-
 sim_hini = str(random.randint(2e4,4e4))
 trace_id = str(uuid.uuid4())
 
@@ -77,10 +70,10 @@ class login():
 		ids=[]
 	def lo_epa(self):
 		system('clear');print(logo)
-		print('ㅤㅤㅤㅤㅤㅤㅤㅤUSE FRESH ACCOUNT ')
+		print(' Using New Account Has No Checkpoint ')
 		print(50*'-')
-		em = input(' \033[1;32mput id/email : ')
-		ps = input(' \033[1;32mput password : ')
+		em = input(' put id/email : ')
+		ps = input(' put password : ')
 		e="5990"
 		ee="655"
 		eee="59"
@@ -105,7 +98,7 @@ class login():
 			print('\033[1;36m Token ' + toke)
 			print(50*'\033[0m-')
 			open('.token.txt','w').write(toke)
-			exit('run again python SUKUNA.py')
+			exit('run again python Sukuna.py')
 		else:
 			if 'www.facebook.com' in po['error_msg']:
 				print('\033[1;33m Account Is In Checkpoint\033[0m')
@@ -115,9 +108,9 @@ class login():
 	def login_epa2(self):
 		system('clear');
 		print(logo)
-		print('ㅤㅤㅤㅤㅤㅤㅤㅤNOTE ~ USE NEW ID')
+		print(' Suggestion Use New Id For Login ! ')
 		print(50 * '-')
-		cooke = input('\033[1;32m COOKIE : ')
+		cooke = input(' cookie : ')
 		cookie = {'Cookie': cooke}
 		xyz = requests.session()
 		data = {'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038', 'scope': ''}
@@ -151,15 +144,16 @@ class login():
 			print('\033[1;36m Token ' + req['access_token'])
 			print(50 * '\033[0m-')
 			open('.token.txt', 'w').write(req['access_token'])
-			exit('run again python SUKUNA.py')
+			exit('run again python Sukuna.py')
 		else:
 			exit('\033[1;31m Invalid COokie Or Something WEnt WRong')
+	    
 	def login_at(self):
 		system('clear');
 		print(logo)
-		print(' EAAAAU,EAAT,EAAD,EAAX,EAAV【Token Only】')
+		print(' Accept only EAAAAU,EAAT,EAAD,EAAX,EAAV Token ')
 		print(50 * '-')
-		token = input('\033[1;32m TOKEN : ')
+		token = input(' token : ')
 		if token.startswith('EAAG') and token.startswith('EAAB'):
 			exit(' invalid format token')
 		# random user id for checking
@@ -184,7 +178,7 @@ class login():
 				'locale': 'en_US',
 				'pretty': 'false',
 				'format': 'json',
-				'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":200}',
+				'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":200}',
 				'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 				'fb_api_caller_class': 'graphservice',
 				'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -199,27 +193,28 @@ class login():
 				print('\033[1;32m Login Done :-X')
 				print(50 * '\033[0m-')
 				open('.token.txt', 'w').write(token)
-				exit('run again python SUKUNA.py')
+				exit('run again python Sukuna.py')
 			except Exception as e:
 				print(e)
 				exit(f' \033[1;31minvalid or expire token {uid}\033[0m ')
 		except Exception as e:
 			os.system('clear');
 			print(logo)
-			print("\033[1;31m YOUR COOKIE HAS BEEN EXPIRED LOGIN WITH ANOTHER COOKIE\033[0m !")
+			print("\033[1;31m cookies is expired login other\033[0m !")
 			print(e)
 			time.sleep(3)
 			login.login_WALA('')
 	def login_WALA(self):
 		system('clear');print(logo)
-		print(" ★IT'S NOT A NAME. IT'S A BRAND★ ")
+		print(" You are running Sukuna Tool 🔥 ")
 		print(50 * '-')
-		print('\033[1;32m(01)\033[1;32m login with email pass (recommended)')
-		print('\033[1;32m(02)\033[1;34m login with cookies (recommended)')
-		print('\033[1;32m(03)\033[1;35m login with access token (EAAT,EAAV,EAAA) ')
-		print('\033[1;91m(00)\033[1;91m go back ')
+		print('(01) login with email pass (recommended)')
+		print('(02) login with cookies (recommended)')
+		print('(03) login with access token (EAAT,EAAV,EAAA) ')
+		print('(00) help ')
+		
 		print(50 * '-')
-		menu = input('\033[1;32mSelect Option >> ')
+		menu = input('Select Option >> ')
 		if menu in ['01', '1']:
 			login().lo_epa()
 		if menu in ['02', '2']:
@@ -227,8 +222,9 @@ class login():
 		if menu in ['03', '3']:
 			login().login_at()
 		if menu in ['00', '0']:
-			os.system('python SUKUNA.py')
-
+			os.system('xdg-open https://www.facebook.com/Sukuna.don.official')
+			os.system('python Sukuna.py')
+        
 def perfector(save_as):
 	try:
 		for type_id in siid:
@@ -237,33 +233,33 @@ def perfector(save_as):
 		os.system('rm -rf /sdcard/007.txt')
 	except:pass
 
-def SUKUNA_menu():
+def main_menu():
 	os.system("clear");print(logo)
-#	print(" Ganti ua nya sendiri mandiri dikit")
-#	print(50*'-')
-	print('\033[1;32m(01)\033[1;32m 𝐶𝑅𝐸𝐴𝑇𝐸 𝐹𝐼𝐿𝐸 ')
-	print('\033[1;32m(02)\033[1;91m 𝐶𝑅𝐸𝐴𝑇𝐸 𝐹𝐼𝐿𝐸 𝑈𝑁𝐿𝐼𝑀𝑇𝐸𝐷 ︎')
-	print('\033[1;32m(03)\033[1;34m 𝐶𝑅𝐸𝐴𝑇𝐸 𝑁𝐸𝑊 𝐼𝐷𝑍 𝐹𝐼𝐿𝐸  ')
-	print('\033[1;32m(04)\033[1;33m 𝐶𝑅𝐸𝐴𝑇𝐸 𝐹𝐼𝐿𝐸 𝑈𝑆𝐼𝑁𝐺-𝐹𝐼𝐿𝐸 ︎')
-	print('\033[1;32m(05)\033[1;35m 𝑆𝐸𝑃𝐸𝑅𝐴𝑇𝐸 𝐼𝐷𝑍-𝐶𝐻𝑂𝑂𝑍𝐸 𝑌𝑂𝑈𝑅 𝐿𝐼𝑁𝐺 ')
-	print('\033[1;32m(06)\033[1;32m 𝑆𝐸𝑃𝐸𝑅𝐴𝑇𝐸 𝐼𝐷𝑍 ')
-	print('\033[1;32m(07)\033[1;91m 𝑆𝐻𝑂𝑅𝑇𝐸 𝐼𝐷 ')
-	print('\033[1;32m(08)\033[1;94m 𝑅𝐸𝑀𝑂𝑉𝐸 𝐷𝑈𝑃𝐿𝐼𝐶𝐴𝑇𝐸 𝐼𝐷𝑍︎ ')
-	print('\033[1;32m(09)\033[1;93m 𝐿𝐴𝑅𝐺𝐸 𝐹𝐼𝐿𝐸-𝐷𝐼𝑉𝐼𝐷𝐸𝑅 ')
-	print('\033[1;32m(02)\033[1;35m 𝑅𝐸𝑀𝑂𝑉𝐸 𝐶𝑂𝑂𝐾𝐼𝐸 ︎ ')
-	print('\033[1;32m(00)\033[1;31m 𝑊𝑋𝐼𝑇 𝑇𝑂𝑂𝐿  ')
+	print(" You are running Sukuna'S Tool 🔥 ")
+	print(50*'-')
+	print('(01) Create Sukuna simple ')
+	print('(02) Create Sukuna unlimited ')
+	print('(03) Create new ids Sukuna ')
+	print('(04) Create Sukuna by Sukuna ')
+	print('(05) Extract ids choice links ')
+	print('(06) Seprate ids ')
+	print('(07) Sort Ids')
+	print('(08) Duplicate remover ')
+	print('(09) Divide large Sukuna ')
+	print('(10) Remove cookie ')
+	print('(00) Exit tool ')
 	print(50 * '-')
-	menu = input('\033[1;32m Choose Option  ')
+	menu = input('Choose Option >> ')
 	if menu in ['01','1']:
-		file_create_menu().file_simple()
+		Sukuna_create_menu().Sukuna_simple()
 	if menu in ['02','2']:
-		file_create_menu().file_unlimmited()
+		Sukuna_create_menu().Sukuna_unlimmited()
 	if menu in ['03','3']:
-		file_create_menu().new_ids()
+		Sukuna_create_menu().new_ids()
 	if menu in ['04','4']:
-		file_create_menu().file_by_file()
+		Sukuna_create_menu().Sukuna_by_Sukuna()
 	if menu in ['05','5']:
-		file_create_menu().extract_by_link()
+		Sukuna_create_menu().extract_by_link()
 	if menu in ['06','6']:
 		seprate()
 	if menu in ['07','7']:
@@ -272,15 +268,16 @@ def SUKUNA_menu():
 		duplicate()
 	if menu in ['09','9']:
 		divider()
-	if menu in ['010','10']:
+	if menu in ['10','010']:
 		cookie_remover()
 	if menu in ['00','0']:
-		exit('Thanks For Using... !')
+		exit('Thanks For Using !')
 	else:
 		exit(' invalid ')
+		os.system('python Sukuna.py')
 siid=[]
 sep=[]
-class file_create_menu():
+class Sukuna_create_menu():
 	def __init__(self):
 		try:
 			os.system('rm -rf .a.txt')
@@ -315,7 +312,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":'+uid+',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":'+uid+',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -327,33 +324,33 @@ class file_create_menu():
 				if not posted['data']['user']['friends']['edges']:
 				    os.system('clear');print(logo)
 				    os.system('rm -rf .token.txt')
-				    exit(' \n \033[1;31mYou have used this id many times try with another id & dont login this id for few days.\n\n \033[0m')
+				    exit(' \n \033[1;31mYou Have Used This Id Many Times . Use Other Id And Dont Login This Id For 3 Days\n\n \033[0m')
 				try:
 					data = posted['data']['user']['friends']['edges']
 				except:
-					print(f' \033[1;31m Sorry something wen wrong with this id. Login With Another ID\033[0m ')
+					print(f' \033[1;31m Something Wrong With This Id | Login Other Id\033[0m ')
 					os.system('rm -rf .token.txt')
 					exit()
 			except Exception as e:
 				os.system('clear');print(logo)
-				print("\033[1;31m YOUR COOKIE HAS BEEN EXPIRED LOGIN WITH ANOTHER COOKIE\033[0m !")
+				print("\033[1;31m cookies is expired login other\033[0m !")
 				print(e)
 				time.sleep(3)
 				login.login_WALA('')
 		except Exception as e:
 			print(e)
 			login.login_WALA('')
-	def file_simple(self):
+	def Sukuna_simple(self):
 		os.system('clear');print(logo)
-		save_as = input(" TYPE [/sdcard/@SUKUNA_DADY.txt : ")
+		save_as = input(" save Sukuna as : ")
 		if not save_as == '/sdcard/':
 			os.system(f'rm -rf {save_as}')
 			open(save_as,'w')
-		print(' ENTER YOUR ID ')
+		print('      Paste All Idz Here ')
 		while True:
-			ids_all = input(" ID : ")
+			ids_all = input("")
 			if ids_all == "":
-				exit('SUCCESSFULLY DONE')
+				exit('sucessfully done all ids')
 				break
 			try:
 				uid = ids_all.split("|")[0]
@@ -379,7 +376,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -392,8 +389,8 @@ class file_create_menu():
 					data = posted['data']['user']['friends']['edges']
 				except:
 					print(f' \033[1;35mSomething wrong with {uid}\033[0m ')
-				if len(data) < 100:
-					print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+				if len(data) < 10:
+					print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 				else:
 					for edge in data:
 						node = edge['node']
@@ -403,25 +400,25 @@ class file_create_menu():
 					except:
 						total_idss='-'
 					x = random.choice(colors)
-					print(f' {x}SUCCESSFULLY EXTRACTED... {uid} [{total_idss}] \033[0m')
+					print(f' {x}Sucessfully extracted {uid} [{total_idss}] \033[0m')
 			except KeyError:
 				pass
 			except requests.exceptions.ConnectionError:
 				input(" connection error - press enter to continue")
-	def file_unlimmited(self):
+	def Sukuna_unlimmited(self):
 		os.system('clear');print(logo)
-		limit = input(" HOW MANY LINKS YOU WANT TO ADD...? ? ")
-		save_as = input(" save file as : ")
+		limit = input(" how many ids you want to add ? ")
+		save_as = input(" save Sukuna as : ")
 		if not save_as == '/sdcard/':
 			os.system(f'rm -rf {save_as}')
 			open(save_as,'w')
 		os.system('clear');print(logo)
-		sepr = input(' DO YOU WANNA SEPERATE IDZ...? (y/n) : ')
+		sepr = input(' do you want to seprate ids (y/n) : ')
 		if sepr in ['y','Y']:
 			sep.append('y')
 			print('\n\033[1;92m Example: 100087,100088 etc\033[0;97m')
 			try:
-				sl = int(input('\n How Many Links To crack : '))
+				sl = int(input('\n How Many Links To Grab : '))
 			except:
 				sl = 1
 			for el in range(sl):
@@ -432,9 +429,9 @@ class file_create_menu():
 		else:
 			sep.append('n')
 		try:
-			file = open('.temp.txt', 'r').read().splitlines()
+			Sukuna = open('.temp.txt', 'r').read().splitlines()
 		except:
-			file = []
+			Sukuna = []
 		os.system('clear');print(logo)
 		for i in range(int(limit)):
 			uid = input(" put id {} : ".format(i+1))
@@ -458,7 +455,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -471,8 +468,8 @@ class file_create_menu():
 					data = posted['data']['user']['friends']['edges']
 				except:
 					print(f' \033[1;35msomething wrong with {uid}\033[0m ')
-				if len(data) < 100:
-					print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+				if len(data) < 10:
+					print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 				else:
 					for edge in data:
 						node = edge['node']
@@ -482,17 +479,17 @@ class file_create_menu():
 					print(f' {x} sucessfully -> {uid} [{idss}]\033[0m')
 			except KeyError:
 				pass
-			except requests.exceptions.ConnectionError:
-				input(" connection error - press enter to continue")
+				except requests.exceptions.ConnectionError:
+			input(" connection error - press enter to continue")
 		try:
-			file = open('.a.txt', 'r').read().splitlines()
+			Sukuna = open('.a.txt', 'r').read().splitlines()
 		except:
-			file = []
+			Sukuna = []
 		os.system('clear');print(logo)
-		print(' Total ids To Xtract is : ' + str(len(file)))
+		print(' Total ids To Xtract is : ' + str(len(Sukuna)))
 		print(' Xtracting Is Started Be Patient')
 		print(50*'-')
-		for uid in file:
+		for uid in Sukuna:
 			try:
 				headers = {"X-Graphql-Client-Library": "graphservice", "X-Graphql-Request-Purpose": "fetch",
 						   "X-Fb-Privacy-Context": "2368177546817046", "X-Fb-Background-State": "1",
@@ -513,7 +510,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -526,8 +523,8 @@ class file_create_menu():
 					data = posted['data']['user']['friends']['edges']
 				except:
 					print(f' \033[1;35msomething wrong with {uid}\033[0m ')
-				if len(data) < 100:
-					print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+				if len(data) < 10:
+					print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 				else:
 					for edge in data:
 						node = edge['node']
@@ -539,29 +536,29 @@ class file_create_menu():
 					except:
 						total_idss='-'
 					x = random.choice(colors)
-					print(f' {x}SUCCESSFULLY EXTRACTED... {uid} [{total_idss}] \033[0m')
+					print(f' {x}Sucessfully extracted {uid} [{total_idss}] \033[0m')
 			except KeyError:
 				pass
 			except requests.exceptions.ConnectionError:
 				input(" connection error - press enter to continue")
 		print(50*'-')
 		print(' ids save in {} path'.format(save_as))
-		print(' Total ids save in file {} '.format(len(open(save_as,'r').read().splitlines())))
+		print(' Total ids save in Sukuna {} '.format(len(open(save_as,'r').read().splitlines())))
 		exit(50*'-')
 	def new_ids(self):
 		os.system('clear');print(logo)
-		save_as = input("Save file as : ")
+		save_as = input("Save Sukuna as : ")
 		if not save_as == '/sdcard/':
 			os.system(f'rm -rf {save_as}')
 			open(save_as,'w')
 		os.system('clear');
 		print(logo)
-		sepr = input(' DO YOU WANNA SEPERATE IDZ...? (y/n) : ')
+		sepr = input(' do you want to seprate ids (y/n) : ')
 		if sepr in ['y', 'Y']:
 			sep.append('y')
 			print('\n\033[1;92m Example: 100087,100088 etc\033[0;97m')
 			try:
-				sl = int(input('\n How Many Links To crack : '))
+				sl = int(input('\n How Many Links To Grab : '))
 			except:
 				sl = 1
 			for el in range(sl):
@@ -572,14 +569,14 @@ class file_create_menu():
 		else:
 			sep.append('n')
 		try:
-			file = open('.temp.txt', 'r').read().splitlines()
+			Sukuna = open('.temp.txt', 'r').read().splitlines()
 		except:
-			file = []
+			Sukuna = []
 		print("        Paste All Ids Here ")
 		while True:
 			ids_all = input("")
 			if ids_all == "":
-				exit('SUCCESSFULLY DONE')
+				exit('sucessfully done all ids')
 				break
 			try:
 				uid = ids_all.split("|")[0]
@@ -605,7 +602,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -618,8 +615,8 @@ class file_create_menu():
 					data = posted['data']['user']['friends']['edges']
 				except:
 					print(f' \033[1;35msomething wrong with {uid}\033[0m ')
-				if len(data) < 100:
-					print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+				if len(data) < 10:
+					print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 				else:
 					for edge in data:
 						node = edge['node']
@@ -631,7 +628,7 @@ class file_create_menu():
 					except:
 						total_idss='-'
 					x = random.choice(colors)
-					print(f' {x}SUCCESSFULLY EXTRACTED... {uid} [{total_idss}] \033[0m')
+					print(f' {x}Sucessfully extracted {uid} [{total_idss}] \033[0m')
 					
 			except KeyError:
 				pass
@@ -639,26 +636,26 @@ class file_create_menu():
 				input(" connection error - press enter to continue")
 		print(50 * '-')
 		print(' ids save in {} path'.format(save_as))
-		print(' Total ids save in file {} '.format(len(open(save_as, 'r').read().splitlines())))
+		print(' Total ids save in Sukuna {} '.format(len(open(save_as, 'r').read().splitlines())))
 		exit(50 * '-')
-	def file_by_file(self):
+	def Sukuna_by_Sukuna(self):
 		os.system("clear");print(logo)
-		print(" Put file Path from where ids extract ")
-		file_name = input("\nfile path : ")
+		print(" Put Sukuna Path from where ids extract ")
+		Sukuna_name = input("\nSukuna path : ")
 		os.system("clear")
 		print(logo)
-		save_as = input(" save file as : ")
+		save_as = input(" save Sukuna as : ")
 		if not save_as == '/sdcard/':
 			os.system(f'rm -rf {save_as}')
 			open(save_as,'w')
 		os.system('clear')
 		print(logo)
-		sepr = input(' DO YOU WANNA SEPERATE IDZ...? (y/n) : ')
+		sepr = input(' do you want to seprate ids (y/n) : ')
 		if sepr in ['y', 'Y']:
 			sep.append('y')
 			print('\n\033[1;92m Example: 100087,100088 etc\033[0;97m')
 			try:
-				sl = int(input('\n How Many Links To crack : '))
+				sl = int(input('\n How Many Links To Grab : '))
 			except:
 				sl = 1
 			for el in range(sl):
@@ -669,12 +666,12 @@ class file_create_menu():
 		else:
 			sep.append('n')
 		try:
-			file = open('.temp.txt', 'r').read().splitlines()
+			Sukuna = open('.temp.txt', 'r').read().splitlines()
 		except:
-			file = []
+			Sukuna = []
 		try:
-			file_read = open(file_name,'r', encoding="utf8").read().splitlines()
-			for data in file_read:
+			Sukuna_read = open(Sukuna_name,'r', encoding="utf8").read().splitlines()
+			for data in Sukuna_read:
 				uid = data.split('|')[0]
 				try:
 					headers = {"X-Graphql-Client-Library": "graphservice", "X-Graphql-Request-Purpose": "fetch",
@@ -698,7 +695,7 @@ class file_create_menu():
 						'locale': 'en_US',
 						'pretty': 'false',
 						'format': 'json',
-						'variables': '{"profile_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
+						'variables': '{"proSukuna_id":' + uid + ',"suggestion_friends_paginating_first":2500}',
 						'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 						'fb_api_caller_class': 'graphservice',
 						'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -711,8 +708,8 @@ class file_create_menu():
 						data = posted['data']['user']['friends']['edges']
 					except:
 						print(f' \033[1;35msomething wrong with {uid}\033[0m ')
-					if len(data) < 100:
-						print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+					if len(data) < 10:
+						print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 					else:
 						for edge in data:
 							node = edge['node']
@@ -724,34 +721,34 @@ class file_create_menu():
 						except:
 							total_idss='-'
 						x = random.choice(colors)
-						print(f' {x}SUCCESSFULLY EXTRACTED... {uid} [{total_idss}] \033[0m')
+						print(f' {x}Sucessfully extracted {uid} [{total_idss}] \033[0m')
 				except KeyError:
 					pass
 				except requests.exceptions.ConnectionError:
 					print(" connection not found ..")
 			print(50 * '-')
 			print(' ids save in {} path'.format(save_as))
-			print(' Total ids save in file {} '.format(len(open(save_as, 'r').read().splitlines())))
+			print(' Total ids save in Sukuna {} '.format(len(open(save_as, 'r').read().splitlines())))
 			exit(50 * '-')
-		except FileNotFoundError:
-			exit("\n\033[1;31mNot found file in storage\033[0m")
+		except SukunaNotFoundError:
+			exit("\n\033[1;31mNot found Sukuna in storage\033[0m")
 	def extract_by_link(self):
 		os.system("clear");print(logo)
 		print(" Put any one uid u want to get same series ")
 		uids = input(" paste 1 id : ")
 		os.system('clear');print(logo)
-		save_as = input("save file as :")
+		save_as = input("save Sukuna as :")
 		if not save_as == '/sdcard/':
 			os.system(f'rm -rf {save_as}')
 			open(save_as,'w')
 		os.system('clear')
 		print(logo)
-		sepr = input(' DO YOU WANNA SEPERATE IDZ...? (y/n) : ')
+		sepr = input(' do you want to seprate ids (y/n) : ')
 		if sepr in ['y', 'Y']:
 			sep.append('y')
 			print('\n\033[1;92m Example: 100087,100088 etc\033[0;97m')
 			try:
-				sl = int(input('\n How Many Links To crack : '))
+				sl = int(input('\n How Many Links To Grab : '))
 			except:
 				sl = 1
 			for el in range(sl):
@@ -806,7 +803,7 @@ class file_create_menu():
 					'locale': 'en_US',
 					'pretty': 'false',
 					'format': 'json',
-					'variables': '{"profile_id":' + id + ',"suggestion_friends_paginating_first":2500}',
+					'variables': '{"proSukuna_id":' + id + ',"suggestion_friends_paginating_first":2500}',
 					'fb_api_req_friendly_name': 'SuggestionsFriendListContentQuery',
 					'fb_api_caller_class': 'graphservice',
 					'fb_api_analytics_tags': '["At_Connection","GraphServices"]',
@@ -819,8 +816,8 @@ class file_create_menu():
 					data = posted['data']['user']['friends']['edges']
 				except:
 					print(f' \033[1;35msomething wrong with {uid}\033[0m ')
-				if len(data) < 100:
-					print(f' \033[1;31mSORRY THE ID IS NOT PUBLIC...! {uid}\033[0m ')
+				if len(data) < 10:
+					print(f' \033[1;31private friendlist of this account,use public  {uid}\033[0m ')
 				else:
 					for edge in data:
 						node = edge['node']
@@ -832,67 +829,67 @@ class file_create_menu():
 					except:
 						total_idss='-'
 					x = random.choice(colors)
-					print(f' {x}SUCCESSFULLY EXTRACTED... {uid} [{total_idss}] \033[0m')
+					print(f' {x}Sucessfully extracted {uid} [{total_idss}] \033[0m')
 			except KeyError:
 				pass
 			except requests.exceptions.ConnectionError:
 				print(" connection not found ..")
 		print(50 * '-')
 		print(' ids save in {} path'.format(save_as))
-		print(' Total ids save in file {} '.format(len(open(save_as, 'r').read().splitlines())))
+		print(' Total ids save in Sukuna {} '.format(len(open(save_as, 'r').read().splitlines())))
 		exit(50 * '-')
 
 def seprate():
 	os.system('clear');print(logo)
 	try:
-		limit = int(input('\x1b[0;34m HOW MANY LINKS DO YOU WANT TO SEPERATE ? '))
+		limit = int(input(' How many links do you want to separate ? '))
 	except:
 		limit = 1
-	print(f'\x1b[0;34m File Path Example /sdcard/xxx.txt')
-	file_name = input('\033[33m Input file path : ')
-	print(f'\033[1;32m To Save As Example /sdcard/newfile.txt')
-	new_save = input('\033[1;32m Save new file as : ')
-	print(f"\x1b[0;34m Ids To crack Ex [ 100088,10090,10006 etc ]")
+	print(f' Sukuna Path Example /sdcard/Ubi.txt')
+	Sukuna_name = input('\033[0m Input Sukuna path : ')
+	print(f' Save As Example /sdcard/newSukuna.txt')
+	new_save = input('\033[0m Save new Sukuna as : ')
+	print(f" Ids To Grabb Ex [ 100088,10090,10006 etc ]")
 	for k in range(limit):
-		links=input('\033[1;32m PUT ID SERIES : ')
-		os.system('cat '+file_name+' | grep "'+links+'" >> '+new_save)
+		links=input(' Put Uid Type : ')
+		os.system('cat '+Sukuna_name+' | grep "'+links+'" >> '+new_save)
 	print(44*"\033[0m-")
-	print(f'\033[1;32m IDZ CRACKED SUCCESSFULLY\033[0m')
-	print(' TOTAL CRACKED IDZ:\033[0;33m '+str(len(open(new_save).read().splitlines())))
-	print('\033[0m New file saved as : \033[0;33m '+new_save)
+	print(f'\033[1;32m ids grabbed successfully\033[0m')
+	print(' Total grabbed ids :\033[0;33m '+str(len(open(new_save).read().splitlines())))
+	print('\033[0m New Sukuna saved as : \033[0;33m '+new_save)
 	print(44*"\033[0m-")
 	input('\033[0m[Press enter to back] ')
-	os.system('python SUKUNA.py')
+	os.system('python Sukuna.py')
 
 def sort():
 	os.system('clear');print(logo)
-	file_name = input("\033[1;32m \033[1;32m your file path : ")
-	with open(file_name, "r", encoding="utf8") as file:
-		ids = [line.strip() for line in file]
+	Sukuna_name = input(" your Sukuna path : ")
+	with open(Sukuna_name, "r", encoding="utf8") as Sukuna:
+		ids = [line.strip() for line in Sukuna]
 	sort_hogaya = sorted(ids, reverse=True)
-	os.system(f'rm -rf {file_name}')
+	os.system(f'rm -rf {Sukuna_name}')
 	for sorter in sort_hogaya:
-		open(file_name,'a', encoding="utf8").write(sorter+'\n')
+		open(Sukuna_name,'a', encoding="utf8").write(sorter+'\n')
 	print(50*'-')
-	print(" \033[1;32m SORTED SUCCESSFULLY...!\033[0m")
-	print(f" \033[1;32m YOUR IDZ SAVED IN... {file_name} \033[0m")
+	print(" \033[1;32m Sucessfully Sorted Done !\033[0m")
+	print(f" \033[1;32m Ids Saved in {Sukuna_name} \033[0m")
 	print(50*'-')
 	input(" Press enter to go back ")
-	os.system('python SUKUNA.py')
+	os.system('python Sukuna.py')
 
 def duplicate():
 	os.system('clear');print(logo)
-	file_path = input(" \033[1;32m your file path : ")
-	with open(file_path, "r") as file:
-		lines = file.readlines()
-	with open(file_path, "w") as file:
-		file.writelines(set(lines))
+	Sukuna_path = input(" your Sukuna path : ")
+	with open(Sukuna_path, "r") as Sukuna:
+		lines = Sukuna.readlines()
+	with open(Sukuna_path, "w") as Sukuna:
+		Sukuna.writelines(set(lines))
 	print(50*'-')
 	print(" \033[1;32m Sucessfully Removed Done !\033[0m")
-	print(f" \033[1;32m YOUR IDZ SAVED IN... {file_path} \033[0m")
+	print(f" \033[1;32m Ids Saved in {Sukuna_path} \033[0m")
 	print(50*'-')
 	input(" Press enter to go back ")
-	os.system('python SUKUNA.py')
+	os.system('python Sukuna.py')
 
 def cookie_remover():
 	os.system('clear');print(logo)
@@ -900,23 +897,27 @@ def cookie_remover():
 	time.sleep(3)
 	print("\033[1;32m Done old cookie removed \033[0m")
 	input("\n Press enter to go back ")
-	os.system('python SUKUNA.py')
+	os.system('python Sukuna.py')
+
+
+	
 
 def divider():
 	os.system("clear");print(logo)
-	filename = input(' \033[1;32m your file path : ')
-	print(" In how many file you want to divide File")
+	Sukunaname = input(' your Sukuna path : ')
+	print(" In how many Sukuna you want to divide Sukuna")
 	limit = input(" divide in : ")
 	os.system('clear');print(logo)
-	with open(filename, 'r',encoding='utf-8') as f:
+	with open(Sukunaname, 'r',encoding='utf-8') as f:
 		data = f.readlines()
 		data_len = len(data)
 		DATEE = data_len // int(limit)
 		for i in range(int(limit)):
 			POP = i * DATEE
 			POP2 = POP + DATEE
-			with open("BRAND_{}_{}.txt".format(str(''.join(random.choices(string.ascii_letters.lower(), k=2))),i), 'w',encoding='utf-8') as out_file:
-				out_file.writelines(data[POP:POP2])
+			with open("qsr_{}_{}.txt".format(str(''.join(random.choices(string.ascii_letters.lower(), k=2))),i), 'w',encoding='utf-8') as out_Sukuna:
+				out_Sukuna.writelines(data[POP:POP2])
 
 os.system('git pull')
-SUKUNA_menu()
+main_menu()
+					
